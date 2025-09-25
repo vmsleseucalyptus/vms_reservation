@@ -1,13 +1,18 @@
-import type { NextConfig } from "next";
+// app/vehicules/[id]/page.tsx
 
-const nextConfig: NextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
-  typescript: {
-    // ignoreBuildErrors: true,
-  },
-};
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
 
-export default nextConfig;
+export default function VehiclePage({ params }: PageProps) {
+  const { id } = params;
+
+  return (
+    <div>
+      <h1>Détails du véhicule</h1>
+      <p>ID du véhicule : {id}</p>
+    </div>
+  );
+}
