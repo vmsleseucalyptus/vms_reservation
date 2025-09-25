@@ -11,8 +11,8 @@ export default function VehiclePage({ params }: PageProps) {
 
   return (
     <div>
-      <h1>Détails du véhicule</h1>
-      <p>ID du véhicule : {id}</p>
+      <h1>Details du vehicule</h1>
+      <p>ID du vehicule : {id}</p>
     </div>
   );
 }
